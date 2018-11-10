@@ -1,6 +1,6 @@
 class CreateShows < ActiveRecord::Migration[5.2]
 
-  create_table :shows do |t|
+  def change create_table :shows do |t|
     t.string :name
     t.string :network
     t.string :day
